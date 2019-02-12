@@ -55,7 +55,6 @@ http {
         }
 
         location /_iyo/callback {
-            resolver 8.8.8.8;
             content_by_lua_file '/path/to/lua-resty-iyo-auth/iyo-callback.lua';
         }
 
